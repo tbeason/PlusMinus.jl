@@ -22,9 +22,9 @@ Fear not!
 This package implements the [plus-minus](https://en.wiktionary.org/wiki/plus-minus_sign) function (and that's it!).
 
 ```julia
-const ± = plusminus     # thats \pm followed by TAB
-
 plusminus(x::Number,y::Number) = (x-y,x+y)
+
+±(x,y) = plusminus(x,y)     # thats \pm followed by TAB
 
 2 ± 1       # returns (1,3)
 ```
