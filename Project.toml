@@ -1,7 +1,7 @@
 name = "PlusMinus"
 uuid = "d42e8734-ecfb-425c-8cac-f02eeed1533f"
 authors = ["Tyler Beason <tbeas12@gmail.com>"]
-version = "0.1.0"
+version = "1.0.0"
 
 [deps]
 
