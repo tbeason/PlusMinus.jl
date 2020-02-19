@@ -1,0 +1,15 @@
+name = "PlusMinus"
+uuid = "d42e8734-ecfb-425c-8cac-f02eeed1533f"
+authors = ["Tyler Beason <tbeas12@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+julia = "^1"
