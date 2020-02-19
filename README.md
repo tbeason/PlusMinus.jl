@@ -34,5 +34,5 @@ The convention I use here is for the `x-y` to return first and `x+y` second. Bec
 Broadcasting is automatic because Julia rocks.
 
 ```
-(±).(collect(1:3),1) == [(i-1,i+1) for i in 1:3]
+(±).(1:3,1) == [(i-1,i+1) for i in 1:3]
 ```
