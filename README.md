@@ -31,8 +31,16 @@ plusminus(x::Number,y::Number) = (x-y,x+y)
 
 The convention I use here is for the `x-y` to return first and `x+y` second. Because the output is a tuple, you can apply `reverse` to it to get the items in the other order. Alternatively, use direct assignment: `minusitem,plusitem = 2 ± 1`.
 
+The package is registered, so can be added with `]add PlusMinus` and available for use after `using PlusMinus`.
+
 Broadcasting is automatic because Julia rocks.
 
 ```
 (±).(1:3,1) == [(i-1,i+1) for i in 1:3]
+```
+
+Flawlessly works with rationals as well.
+```julia
+julia> 2//5 ± 1//2
+(-1//10, 9//10)
 ```
